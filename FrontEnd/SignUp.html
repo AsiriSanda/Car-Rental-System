@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ul > li {
+            cursor: pointer;
+        }
+
+        ul > li:hover {
+            color: #3d98ef;
+        }
+
+        ul > li:active {
+            color: #c82333;
+        }
+
+        #dashboardImg2 {
+            position: absolute;
+            width: 98%;
+            height: auto;
+        }
+
+        #btnPlaceOrder, #btnDeletePlaceOrder {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        body {
+            background: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+
+<header class="jumbotron text-black p-3" style="background: #320b86" id="header2">
+    <h1 class="position-absolute" id="nav2" style="color: white"> Sign Up </h1>
+
+    <ul class="list-group list-group-horizontal text-light justify-content-end font-weight-bold" id="tab2">
+        <a class="tab-pane list-group-item bg-light border-warning" href="index.html" style="border-radius: 10px " > <i class="fa fa-sign-in-alt"></i> Home</a>
+        <a class="tab-pane list-group-item bg-light border-warning" href="Order.html" style="border-radius: 10px " > <i class="fa fa-sign-in-alt"></i> Rent Car</a>
+    </ul>
+</header>
+
+<main class="container-fluid" id="customerContent2">
+    <section class="row m-lg-4">
+        <div class="col-4">
+            <div class="form-group">
+                <label for="txtCustomerId3">Customer ID</label>
+                <input class="form-control" id="txtCustomerId3" required type="text">
+                <span class="control-error" id="lblCustomerId3"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtCustomerName3">Customer Name</label>
+                <input class="form-control" id="txtCustomerName3" type="text">
+                <span class="control-error" id="lblCustomerName3"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtCustomerAddress3">Customer Address</label>
+                <input class="form-control" id="txtCustomerAddress3" type="text">
+                <span class="control-error" id="lblCustomerAddress3"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtEmail3">Email</label>
+                <input class="form-control" id="txtEmail3" type="text">
+                <span class="control-error" id="lblEmail3"></span>
+            </div>
+            <div class="form-group">
+                <label for="txtNIC3">NIC</label>
+                <input class="form-control" id="txtNIC3" type="text">
+                <span class="control-error" id="lblNIC3"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtDrivingLicence3">NIC Image</label>
+                <div>
+                    <input type="file" id="NicImg" name="img" accept="image/*">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="txtDrivingLicence3">Driving Licence</label>
+                <input class="form-control" id="txtDrivingLicence3" type="text">
+                <span class="control-error" id="lblDrivingLicence3"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="txtDrivingLicence3">Driving Licence Image </label>
+                <div>
+                    <input type="file" id="DLimg" name="img" accept="image/*">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtContact3">Contact Num</label>
+                <input class="form-control" id="txtContact3" type="text">
+                <span class="control-error" id="lblContact3"></span>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" id="btnSaveCustomer3" type="button" style="border-radius: 20px; margin: auto; left: 5cm; width: 4cm">Sign Up
+                </button>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <div class="card" style="width: 75rem;">
+                <img src="assets/assets/images/images/car-rent-sale.jpg">
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="controller/CustomerFormController.js"></script>
+
+
+
+</body>
+</html>
